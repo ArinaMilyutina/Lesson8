@@ -28,25 +28,16 @@ public class Phone {
         return number;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
-    }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
 
     public int getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
 
     public void receiveCall(String name, String number) {
         System.out.println("Call " + name + " " + number);
@@ -59,9 +50,9 @@ public class Phone {
     @Override
     public String toString() {
         return "Phone:\n" +
-                "number: " + number +
-                ",\nmodel: " + model +
-                ",\nweight: " + weight + "g" +
+                "number: " + getNumber() +
+                ",\nmodel: " + getModel() +
+                ",\nweight: " + getWeight() + "g" +
                 ";";
     }
 }
