@@ -20,8 +20,8 @@ public class Phone {
 
     public Phone() {
         this.model = "Monoblock";
-        this.weight=300;
-        this.number="+375295775056";
+        this.weight = 300;
+        this.number = "+375295775056";
     }
 
     public String getNumber() {
@@ -48,11 +48,12 @@ public class Phone {
         this.weight = weight;
     }
 
-    public void receiveCall(String name,String number) {
+    public void receiveCall(String name, String number) {
         System.out.println("Call " + name + " " + number);
     }
-    public void sendMessage(String... number){
-        System.out.println("Send a message to the numbers: "+Arrays.deepToString(number));
+
+    public void sendMessage(String... number) {
+        System.out.println("Send a message to the numbers: " + Arrays.deepToString(number));
     }
 
     @Override
@@ -60,7 +61,7 @@ public class Phone {
         return "Phone:\n" +
                 "number: " + number +
                 ",\nmodel: " + model +
-                ",\nweight: " + weight +"g"+
+                ",\nweight: " + weight + "g" +
                 ";";
     }
 }
